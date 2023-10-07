@@ -11,6 +11,7 @@
 		6F31B6412AD19B91005322E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F31B6402AD19B91005322E2 /* ContentView.swift */; };
 		6F31B6432AD19B93005322E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F31B6422AD19B93005322E2 /* Assets.xcassets */; };
 		6F31B6462AD19B93005322E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F31B6452AD19B93005322E2 /* Preview Assets.xcassets */; };
+		6F31B6512AD19E4F005322E2 /* DesignSystemTest in Frameworks */ = {isa = PBXBuildFile; productRef = 6F31B6502AD19E4F005322E2 /* DesignSystemTest */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F31B6512AD19E4F005322E2 /* DesignSystemTest in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = ModularizationChallenge;
+			packageProductDependencies = (
+				6F31B6502AD19E4F005322E2 /* DesignSystemTest */,
+			);
 			productName = ModularizationChallenge;
 			productReference = 6F31B63B2AD19B91005322E2 /* ModularizationChallenge.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 6F31B6322AD19B91005322E2;
+			packageReferences = (
+				6F31B64F2AD19E4F005322E2 /* XCRemoteSwiftPackageReference "DesignSystemTest" */,
+			);
 			productRefGroup = 6F31B63C2AD19B91005322E2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -352,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6F31B64F2AD19E4F005322E2 /* XCRemoteSwiftPackageReference "DesignSystemTest" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LuizCarlosAraujo/DesignSystemTest.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6F31B6502AD19E4F005322E2 /* DesignSystemTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F31B64F2AD19E4F005322E2 /* XCRemoteSwiftPackageReference "DesignSystemTest" */;
+			productName = DesignSystemTest;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6F31B6332AD19B91005322E2 /* Project object */;
 }
